@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<!__Голова - настройка отображения страницы, подгрузка скриптов или стилей.__!>
+<head>
+    <meta charset="UTF-8">
+    <!__Title - название страницы в шапке браузера__!>
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<!__Тело - видимая часть для пользователя__!>
+<body>
+    <a href="/">Главная</a>
+    <a href="/contacts">Контакты</a>
+    <a href="/publications">Публикации</a>
+    <a href="/status">Состояние</a>
+    <a href="/publish">Создать публикацию</a>
+
+    {% block content %} {% endblock %}
+</body>
+</html>
